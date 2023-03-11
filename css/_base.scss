@@ -1,21 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
+
 /* 
   =============
   Variables
   =============
 */
-:root {
-    --primaryColor: #f15025;
-    --mainBlack: #222;
-    --mainWhite: #fff;
-    --offWhite: #f7f7f7;
-    --darkGrey: #afafaf;
-    --mainTransition: all 0.3s linear;
-    --mainSpacing: 0.2rem;
-}
+$primaryColor: #f15025;
+$mainBlack: #222;
+$mainWhite: #fff;
+$offWhite: #f7f7f7;
+$darkGrey: #afafaf;
+$mainTransition: all 0.3s linear;
+$mainSpacing: 0.2rem;
+
 
 /* 
     =============
-    Global Styles
+    Global Styl$
     =============
 */
 * {
@@ -26,8 +27,8 @@
 
 body {
     font-family: "Fira Code", monospace;
-    color: var(--mainBlack);
-    background: var(--mainWhite);
+    color: $mainBlack;
+    background: $mainWhite;
     line-height: 1.5;
 }
 
@@ -44,7 +45,7 @@ h1,
 h2,
 h3 {
     text-transform: capitalize;
-    letter-spacing: var(--mainSpacing);
+    letter-spacing: $mainSpacing;
     margin-bottom: 1.25rem;
 }
 
@@ -60,7 +61,7 @@ p {
     font-weight: 300;
     font-size: 0.7rem;
     line-height: 2;
-    background: #f15025;
+    // background: #f15025;
 }
 
 /* button */
@@ -68,13 +69,13 @@ p {
     display: inline-block;
     padding: 0.5rem 1rem;
     text-transform: capitalize;
-    border: 3px solid var(--primaryColor);
-    color: var(--primaryColor);
+    border: 3px solid $primaryColor;
+    color: $primaryColor;
     margin: 3rem;
-    transition: var(--mainTransition);
+    transition: $mainTransition;
 }
 
 .btn:hover {
-    background: var(--primaryColor);
-    color: var(--mainWhite);
+    background: $primaryColor;
+    color: $mainWhite;
 }

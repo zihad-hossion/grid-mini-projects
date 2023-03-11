@@ -1,20 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap");
 /* 
   =============
   Variables
   =============
 */
-:root {
-  --primaryColor: #f15025;
-  --mainBlack: #222;
-  --mainWhite: #fff;
-  --offWhite: #f7f7f7;
-  --darkGrey: #afafaf;
-  --mainTransition: all 0.3s linear;
-  --mainSpacing: 0.2rem; }
-
 /* 
     =============
-    Global Styles
+    Global Styl$
     =============
 */
 * {
@@ -24,8 +16,8 @@
 
 body {
   font-family: "Fira Code", monospace;
-  color: var(--mainBlack);
-  background: var(--mainWhite);
+  color: #222;
+  background: #fff;
   line-height: 1.5; }
 
 a {
@@ -39,7 +31,7 @@ h1,
 h2,
 h3 {
   text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: 0.2rem;
   margin-bottom: 1.25rem; }
 
 h1 {
@@ -51,21 +43,65 @@ h2 {
 p {
   font-weight: 300;
   font-size: 0.7rem;
-  line-height: 2;
-  background: #f15025; }
+  line-height: 2; }
 
 /* button */
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem;
   text-transform: capitalize;
-  border: 3px solid var(--primaryColor);
-  color: var(--primaryColor);
+  border: 3px solid #f15025;
+  color: #f15025;
   margin: 3rem;
-  transition: var(--mainTransition); }
+  transition: all 0.3s linear; }
 
 .btn:hover {
-  background: var(--primaryColor);
-  color: var(--mainWhite); }
+  background: #f15025;
+  color: #fff; }
+
+.navbar {
+  background: #afafaf;
+  padding: 0 2rem; }
+  .navbar li {
+    list-style: none; }
+    .navbar li a {
+      text-transform: capitalize;
+      display: block;
+      padding: 1rem 0;
+      color: #f15025;
+      letter-spacing: 0.2rem;
+      transition: all 0.3s linear; }
+      .navbar li a:hover {
+        color: #222; }
+
+@media screen and (min-width: 992px) {
+  .navbar ul {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    .navbar ul a {
+      text-align: center; } }
+.hero-header {
+  min-height: 100vh;
+  background: #f15025;
+  color: #fff;
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+
+.hero-banner {
+  padding: 0 1rem; }
+  .hero-banner p {
+    width: 80%;
+    max-width: 560px;
+    font-size: 1rem; }
+
+@media screen and (max-width: 600px) {
+  .hero-banner {
+    padding: 0 3rem; } }
+@media screen and (min-width: 768px) {
+  .hero-header {
+    background: linear-gradient(rgba(241, 80, 37, 0.75), rgba(0, 0, 0, 0.75)), url("../images/image-2.jpeg") center/cover fixed no-repeat; } }
 
 /*# sourceMappingURL=style.css.map */
