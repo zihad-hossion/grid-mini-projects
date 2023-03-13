@@ -103,5 +103,32 @@ p {
 @media screen and (min-width: 768px) {
   .hero-header {
     background: linear-gradient(rgba(241, 80, 37, 0.75), rgba(0, 0, 0, 0.75)), url("../images/image-2.jpeg") center/cover fixed no-repeat; } }
+.cards {
+  padding: 4rem 0; }
+  .cards-title {
+    text-align: center; }
+  .cards-center {
+    width: 80vw;
+    max-width: 1200px;
+    margin: 2rem auto; }
+
+.card {
+  border: 1px solid #afafaf;
+  margin-bottom: 3rem; }
+  .card-info {
+    padding: 1rem; }
+  .card-footer {
+    background: #afafaf;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; }
+    .card-footer span {
+      color: #f15025; }
+
+.cards-center {
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr)); }
 
 /*# sourceMappingURL=style.css.map */
